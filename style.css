@@ -61,7 +61,8 @@
 
 .nav-search {
   display: flex;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   height: 40px;
   background-color: pink;
   border-radius: 4px;
@@ -304,4 +305,107 @@ a {
 
 .dev-bhaumik i {
   width: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .nav-search {
+    width: 600px;
+  }
+
+  .box {
+    width: 30%;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-search {
+    width: 400px;
+  }
+
+  .box {
+    width: 45%;
+  }
+
+  .panel-ops {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-search {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .panel-ops {
+    width: 100%;
+    text-align: center;
+  }
+
+  .panel-deals {
+    display: none;
+  }
+
+  .hero-msg {
+    width: 90%;
+  }
+
+  .foot-panel2 {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .foot-panel2 ul {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-logo,
+  .logo {
+    width: 80px;
+  }
+
+  .add-frist,
+  .add-sec {
+    font-size: 0.7rem;
+  }
+
+  .nav-second,
+  .nav-cart {
+    font-size: 0.75rem;
+  }
+
+  .nav-cart i {
+    font-size: 24px;
+  }
+
+  .hero-msg {
+    font-size: 0.75rem;
+  }
+
+  .box {
+    height: auto;
+  }
+
+  .box-img {
+    height: 200px;
+  }
+
+  .foot-panel2 ul {
+    width: 100%;
+  }
 }
